@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    .one,
+    .two {
+      background-image: url('./css_sprites.png');
+      background-repeat: no-repeat;
+    }
+
+    .one {
+      height: 400px;
+      /* Adjust height based on the aspect ratio of the first image */
+      width: 532px;
+      /* Half the total width of the sprite */
+      background-position: 0px 0px;
+      /* Displays the first image (no offset needed) */
+
+    }
+
+
+    .two {
+      height: 400px;
+      /* Adjust height based on the aspect ratio of the second image */
+      width: 532px;
+      /* Half the total width of the sprite */
+      background-position: -532px 0px;
+      /* Moves the position to the second image */
+
+    }
+  </style>
+
+  </header>
+
+  <div class="image-sprite">
+    <div class="one"></div>
+    <div class="two"></div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
